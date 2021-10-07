@@ -1,4 +1,4 @@
-This module is intended to help you establish all the insfrastructure needed in order to host a website on AWS. 
+This module is intended to help you establish all the insfrastructure needed in order to create an elasticbeanstalk application with an additional listener so that we can access via HTTPS
 
 This module will:
     - zip contents of source code 
@@ -7,6 +7,7 @@ This module will:
     - create Route53 records so that the provided application points to the elastic beanstalk environment
 
 This module assumes you registered your domain through AWS and therefore already have a hosted zone created for that domain. If you do not have a domain yet, [register one through AWS](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html)
+
 
 How to use this module
 
@@ -29,5 +30,3 @@ How to use this module
 
     ```
 2. Run `terraform apply`
-
-3. Upload index.html along with other website files to S3 bucket. Until you upload an index.html document, if you visit your newly created website you will get a 404
